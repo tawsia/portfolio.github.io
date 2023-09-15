@@ -20,7 +20,11 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
+<<<<<<< HEAD
     const { name, value } = e.target;
+=======
+ const { name, value } = e.target;
+>>>>>>> b2c6336 (Added Reply to in contact)
 
     setForm({
       ...form,
