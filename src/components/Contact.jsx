@@ -20,11 +20,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-<<<<<<< HEAD
-    const { name, value } = e.target;
-=======
  const { name, value } = e.target;
->>>>>>> b2c6336 (Added Reply to in contact)
 
     setForm({
       ...form,
@@ -120,58 +116,13 @@ const Contact = () => {
             />
           </label>
 
-          <div className="flex items-center space-x-4">
-            <button
-              type='submit'
-              className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
-            >
-              {loading ? "Sending..." : "Send"}
-            </button>
-
-            <a
-              href="https://shorturl.at/frFOV" // Replace with the actual CV file URL
-              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary text-center block"
-            >
-              Resume
-            </a>
-          </div>
+          <button
+            type='submit'
+            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+          >
+            {loading ? "Sending..." : "Send"}
+          </button>
         </form>
-
-        <div className="mt-6 flex items-center space-x-4"> {/* Use "items-center" to remove extra space */}
-          <p className="text-white font-medium text-lg">Connect with me:</p>
-          <a
-            href="https://twitter.com/TawsiaRasool"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-3xl text-blue-500 hover:text-blue-700"
-          >
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/tawsia-rasool-038912199/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-3xl text-blue-500 hover:text-blue-700"
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a
-            href="https://github.com/tawsia"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-3xl text-blue-500 hover:text-blue-700"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href="https://www.instagram.com/tawsiarasool1626/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-3xl text-blue-500 hover:text-blue-700"
-          >
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-        </div>
       </motion.div>
 
       <motion.div
